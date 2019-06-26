@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transworld - Efetue sua pré-matrícula</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+    <header><a id="trans" href="http://transworld.com.br" target="_blank"><img src="img/image.png" alt=""></a></header>
+    
+    <h1 class="title">Efetue sua pré-matrícula</h1>
+    
+    <form id="form1" class="formulario" method="get" action="" >
+        <div class="form-parte">
+            <label for="nome" class="subtitle">Nome</label>
+            <input id="nome" type="text" placeholder="Preencha seu nome completo">
+        </div>
+        <div class="form-parte">
+            <label for="email" class="subtitle">E-mail</label>
+            <input id="email" type="text" placeholder="Preencha seu email">
+        </div>
+        <div class="flex-par">
+            <div class="form-parte">
+                <label for="cidade" class="subtitle">Cidade</label>
+                <input id="cidade" type="text" placeholder="Preencha sua cidade">
+            </div>
+            <div class="form-parte">
+                <label for="bairro" class="subtitle">Bairro</label>
+                <input id="bairro" type="text" placeholder="Preencha seu bairro">
+            </div>
+        </div>
+        <div class="flex-par">
+            <div class="form-parte">
+                <label for="rua" class="subtitle">Rua</label>
+                <input id="rua" type="text" placeholder="Preencha sua rua">
+            </div>
+            <div class="form-parte">
+                <label for="numero" class="subtitle">Número</label>
+                <input id="numero" type="tel" placeholder="Preencha seu número">
+            </div>
+        </div>
+        <div class="form-parte">
+            <label for="complemento" class="subtitle">Complemento <b>(opcional)</b></label>
+            <input id="complemento" type="text">
+        </div>
+        <div class="flex-par">
+            <div class="form-parte">
+                <label for="telefone" class="subtitle">Telefone</label>
+                <input id="telefone" type="tel" placeholder="Preencha seu número de telefone">
+            </div>
+            <div class="form-parte">
+                <label for="data" class="subtitle">Data de nascimento</label>
+                <input id="data" type="date" placeholder="Preencha sua data de nascimento">
+            </div>
+        </div>  
+    </form>
+    <button id="btn" form="form1" type="submit"><b>Quero me matricular <img src="img/Frame.svg" alt=""></b></button>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

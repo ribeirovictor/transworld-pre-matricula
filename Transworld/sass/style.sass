@@ -1,0 +1,112 @@
+
+body,a,div,form,p,h1,h2,h3,h4,img,input,button,label
+    display: block
+    margin: 0
+    padding: 0
+
+*
+    box-sizing: border-box
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+
+body
+    background-color: #98BB10
+
+header
+    display: flex
+    width: 100%
+    justify-content: center
+#trans
+    margin: 40px auto
+    img
+        width: 200px
+
+.title
+    margin: 30px 0 50px 0
+    text-align: center
+    color: #fff
+    font:
+        size: 24px
+        family: Titillium Web, sans-serif
+    &:before
+        display: block
+        content: ''
+        width: 43px
+        height: 14px
+        margin: 0 auto
+        background-image: url("/img/image.svg")
+
+.formulario
+    position: relative
+    max-width: 900px
+    margin: 0 auto
+    padding: 10px 80px
+    &:before
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        display: block
+        content: ''
+        opacity: 0.5
+        background:
+            repeat: space
+            image: url("/img/cross.svg")
+
+.form-parte
+    margin-top: 15px
+    flex: 1
+
+.flex-par
+    display: flex
+    justify-content: space-between
+
+.flex-par div:nth-child(1)
+    width: 100%
+    margin-right: 15px
+
+@media only screen and (max-width: 690px)
+    .formulario
+        padding: 10px 20px
+    .flex-par
+        flex-direction: column 
+.subtitle
+    color: #fff
+    font:
+        size: 16px
+        family: Titillium Web, sans-serif
+        weight: bold
+    b
+        font-weight: 400
+
+input
+    width: 100%
+    height: 45px
+    padding: 15px
+    border: 2px solid #8CAC0F   
+    color: #313135
+    font:
+        weight: Regular
+        size: 16px
+        family: Titillium Web, sans-serif
+    &::placeholder
+        color: rgba(0,0,0,0.3)
+
+#btn
+    margin: 40px auto
+    padding: 15px 40px
+    border: 1.5px solid #fff
+    background: none
+    color: #fff
+    font:
+        size: 16px
+        family: Titillium Web
+        weight: bold
+    &:hover
+        cursor: pointer
+    img
+        position: relative
+        top: 1.5px
+        display: inline-block
