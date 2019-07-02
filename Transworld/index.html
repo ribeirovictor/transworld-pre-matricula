@@ -5,63 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Transworld - Efetue sua pré-matrícula</title>
+    <link rel="stylesheet" href="//paginas.rocks/Content/capture/forms/formCustom.css" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
    
 </head>
 <body>
-    <header><a id="trans" href="http://transworld.com.br" target="_blank"><img src="img/image.png" alt=""></a></header>
+    <header><a id="trans" href="http://transworld.com.br" target="_blank"><img src="img/logo.svg" alt=""></a></header>
     
     <h1 class="title">Efetue sua pré-matrícula</h1>
     
-    <form id="form1" class="formulario" method="get" action="" >
+    <form id="llCaptureForm" class="formulario llformCustom" action="//paginas.rocks/capture" method="post">
+        <input type="hidden" id="mid" name="mid" value="291614" />
+        <input type="hidden" id="fid" name="fid" value="11197" />
         <div class="form-parte">
-            <label for="nome" class="subtitle">Nome</label>
-            <input id="nome" type="text" placeholder="Preencha seu nome completo">
+            <label for="llfield25179" class="subtitle">Nome</label>
+            <input id="llfield25179" type="text" name="llfield25179" placeholder="Preencha seu nome completo" data-required="true">
+            <div class="field-error" id="llerror25179"></div>
         </div>
         <div class="form-parte">
-            <label for="email" class="subtitle">E-mail</label>
-            <input id="email" type="text" placeholder="Preencha seu email">
+            <label for="llfield25177" class="subtitle">E-mail</label>
+            <input id="llfield25177" type="text" name="llfield25177" placeholder="Preencha seu email" data-required="true">
+            <div class="field-error" id="llerror25177"></div>
         </div>
         <div class="flex-par">
             <div class="form-parte">
-                <label for="cidade" class="subtitle">Cidade</label>
-                <input id="cidade" type="text" placeholder="Preencha sua cidade">
+                <label for="llfield25833" class="subtitle">Cidade</label>
+                <input id="llfield25833" type="text" name="llfield25833" placeholder="Preencha sua cidade" data-required="true">
+                <div class="field-error" id="llerror25833"></div>
             </div>
             <div class="form-parte">
-                <label for="bairro" class="subtitle">Bairro</label>
-                <input id="bairro" type="text" placeholder="Preencha seu bairro">
+                <label for="llfield25834" class="subtitle">Bairro</label>
+                <input id="llfield25834" type="text" name="llfield25834" placeholder="Preencha seu bairro" data-required="true">
+                <div class="field-error" id="llerror25834"></div>
             </div>
         </div>
         <div class="flex-par">
             <div class="form-parte">
-                <label for="rua" class="subtitle">Rua</label>
-                <input id="rua" type="text" placeholder="Preencha sua rua">
+                <label for="llfield25835" class="subtitle">Rua</label>
+                <input id="llfield25835" type="text" name="llfield25835" placeholder="Preencha sua rua" data-required="true">
+                <div class="field-error" id="llerror25835"></div>
             </div>
             <div class="form-parte">
-                <label for="numero" class="subtitle">Número</label>
-                <input id="numero" type="tel" placeholder="Preencha seu número">
+                <label for="llfield25838" class="subtitle">Número</label>
+                <input id="llfield25838" type="tel" name="llfield25838" placeholder="Preencha seu número" data-required="true">
+                <div class="field-error" id="llerror25838"></div>
             </div>
         </div>
         <div class="form-parte">
-            <label for="complemento" class="subtitle">Complemento <b>(opcional)</b></label>
-            <input id="complemento" type="text">
+          <label for="llfield25836" class="subtitle">Complemento <b>(opcional)</b></label>
+          <input id="llfield25836" name="llfield25836" type="text">
+          <div class="field-error" id="llerror25836"></div>
         </div>
         <div class="flex-par">
-            <div class="form-parte">
-                <label for="telefone" class="subtitle">Telefone</label>
-                <input id="telefone" type="tel" placeholder="Preencha seu número de telefone">
-            </div>
-            <div class="form-parte">
-                <label for="data" class="subtitle">Data de nascimento</label>
-                <input id="data" type="date" placeholder="Preencha sua data de nascimento">
-            </div>
+          <div class="form-parte">
+            <label for="telefone" class="subtitle">Telefone</label>
+            <input id="telefone" type="tel"  name="llfield25180" placeholder="Preencha seu número de telefone" data-required="true">
+            <div class="field-error" id="llerror25180"></div>
+          </div>
+          <div class="form-parte">
+            <label for="llfield25837" class="subtitle">Data de nascimento</label>
+            <input id="llfield25837" type="date" name="llfield25837" placeholder="Preencha sua data de nascimento" data-required="true">
+            <div class="field-error" id="llerror25837"></div>
+          </div>
         </div>  
+        <img src="https://llimages.com/redirect/redirect.aspx?A=V&f=11197&m=291614" style="display: none;" />
+        <button id="btn" type="submit"><b>Quero me matricular <img src="img/Frame.svg" alt=""></b></button>
+        <div class="loading-box" style="text-align: center; background: #8db212;">
+            <img style="margin: 0 auto;" src="//paginas.rocks/content/images/spinner.gif" />
+        </div>
+        <div class="error-box">
+            <!-- <img src="//paginas.rocks/content/images/error-icon.png" /> -->
+            <div></div>
+            <button type="button" class="btn" id="btn-error">Ok</button>
+        </div>
+        <img src="https://llimages.com/redirect/redirect.aspx?A=V&f=11197&m=291614" style="display: none;" />
     </form>
-    <button id="btn" form="form1" type="submit"><b>Quero me matricular <img src="img/Frame.svg" alt=""></b></button>
     
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="//paginas.rocks/scripts/capture/capture.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/index.js"></script> -->
 </body>
 </html>
